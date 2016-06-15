@@ -1,0 +1,31 @@
+<f:layout name="Default"/>
+
+<f:section name="Header">
+
+    <f:render partial="Header/All" arguments="{_all}" />
+
+</f:section>
+<f:section name="Main">
+    <f:if condition="{menu}">
+        <div class="row iconeMenu" data-equalheight="container">
+            <f:for each="{menu}" as="page">
+                <f:if condition="{page.files.0}">
+                    <f:if condition="{page.files.0.type} == 2">
+
+                        <div class="col-xs-6 col-sm-4">
+                            <f:link.page pageUid="{page.data.uid}" title="{page.data.title}" class="" data="{equalheight: 'item', toggle: 'tooltip'}">
+                                <div class="menu-Icone48">
+                                    <f:media file="{page.files.0}" width="{settings.media48.width}" height="{settings.media48.height}" style="width:{settings.media48.width};height:{settings.media48.height};" />
+                                </div>
+                            </f:link.page>
+                        </div>
+
+                    </f:if>
+                </f:if>
+            </f:for>
+        </div>
+    </f:if>
+
+
+</f:section>
+
