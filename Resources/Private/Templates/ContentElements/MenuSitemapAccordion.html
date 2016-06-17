@@ -1,0 +1,64 @@
+<f:layout name="Default"/>
+<f:section name="Header">
+
+    <f:render partial="Header/All" arguments="{_all}" />
+
+</f:section>
+<f:section name="Main">
+      <div class="row sitemap">
+        <div class="col-md-12">
+            <div class="panel-group" id="accordion">
+              <f:for each="{menu}" as="item">
+                <f:render section="Menu" arguments="{menu: item.children}" />
+               </f:for>
+             </div>
+        </div>
+     </div>
+</f:section>
+
+<f:section name="Menu">
+  <f:if condition="{menu}">
+    <f:for each="{menu}" as="item">
+         <div class="panel panel-default">
+             <div class="panel-heading">
+                <h4 class="panel-title">
+                  <f:if condition="{item.children}">
+                    <f:then>
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse{item.data.uid}">
+                          {item.title}
+                         </a>
+                    </f:then>
+                    <f:else>
+                        <f:link.page pageUid="{item.data.uid}" title="{item.title}">{item.title}</f:link.page>
+                     </f:else>
+                  </f:if>
+                  
+                </h4>
+               </div>  
+            <f:if condition="{item.children}">
+                 <div id="collapse{item.data.uid}" class="panel-collapse collapse">
+                    <div class="panel-body">
+                       <table class="table">
+                           <f:render section="MenuNavigationItem" arguments="{menu: item.children}" />
+                        </table>
+                       </div>
+                    </div>
+            </f:if>
+        </div>
+    </f:for>
+  </f:if>
+</f:section>
+
+<f:section name="MenuNavigationItem">
+    <f:for each="{menu}" as="item">
+       <tr>
+         <td><f:link.page pageUid="{item.data.uid}" title="{item.title}">{item.title}</f:link.page>
+            <f:if condition="{item.children}">
+               <table class="subSiteMap">
+                  <f:render section="MenuNavigationItem" arguments="{menu: item.children}" />
+               </table>
+            </f:if>
+          </td>
+        </tr>
+    </f:for>
+</f:section>
