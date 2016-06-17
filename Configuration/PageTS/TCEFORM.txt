@@ -1,0 +1,15 @@
+#################
+#### TCEFORM ####
+#################
+TCEFORM {
+ tt_content {
+        menu_type {
+            addItems {
+                minithumbnail_dir = MiniThumbnail Dir
+                minithumbnail_list = MiniThumbnail List
+                iconemenu_dir = Menu Icones 48px Dir
+                iconemenu_list = Menu Icones 48px List
+            }
+        }
+  }
+}
