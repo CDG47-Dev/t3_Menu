@@ -2,13 +2,13 @@
 #### CTYPE: MENU SITEMAP ####
 #############################
 
-tt_content.menu.accordeon = FLUIDTEMPLATE
-tt_content.menu.accordeon {
+tt_content.menu.accordion = FLUIDTEMPLATE
+tt_content.menu.accordion {
 
     ################
     ### TEMPLATE ###
     ################
-    templateName = MenuSitemapAccordeon
+    templateName = MenuSitemapAccordion
     templateRootPaths {
         0 = EXT:bootstrap_package/Resources/Private/Templates/ContentElements/
         10 = {$plugin.bootstrap_package_contentelements.view.templateRootPath}
