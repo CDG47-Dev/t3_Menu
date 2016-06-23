@@ -3,3 +3,4 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3_menu/Configuration/TypoScript/ContentElement/BootstrapPackageMenuIcones48.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3_menu/Configuration/TypoScript/ContentElement/BootstrapPackageMenuThumbnail2.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3_menu/Configuration/TypoScript/ContentElement/MenuSitemapAccordion.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3_menu/Configuration/TypoScript/ContentElement/BootstrapPackageMenuThumbnailRow.txt">
