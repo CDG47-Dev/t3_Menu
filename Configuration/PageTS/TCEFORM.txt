@@ -12,6 +12,8 @@ TCEFORM {
                 iconemenu_dir = Menu Icones 48px Dir
                 iconemenu_list = Menu Icones 48px List
                 accordion = Menu Sitemap Bootstrap Accordion
+                minithumbnailrow_dir = MiniThumbnail Row Dir
+                minithumbnailrow_list = MiniThumbnail Row List                
             }
         }
   }
