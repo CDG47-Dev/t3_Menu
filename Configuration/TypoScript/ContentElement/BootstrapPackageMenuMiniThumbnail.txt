@@ -11,17 +11,17 @@ tt_content.menu.minithumbnail_list {
     templateName = BootstrapPackageMenuMiniThumbnail
     templateRootPaths {
         0 = EXT:bootstrap_package/Resources/Private/Templates/ContentElements/
-		1 = EXT:t3_menu/Resources/Private/Templates/ContentElements/
+	1 = EXT:t3_menu/Resources/Private/Templates/ContentElements/
         2 = {$plugin.bootstrap_package_contentelements.view.templateRootPath}
     }
     partialRootPaths {
         0 = EXT:bootstrap_package/Resources/Private/Partials/ContentElements/
-		1 = EXT:t3_menu/Resources/Private/Templates/ContentElements/
+	1 = EXT:t3_menu/Resources/Private/Templates/ContentElements/
         2 = {$plugin.bootstrap_package_contentelements.view.partialRootPath}
     }
     layoutRootPaths {
         0 = EXT:bootstrap_package/Resources/Private/Layouts/ContentElements/
-		1 = EXT:t3_menu/Resources/Private/Templates/ContentElements/
+	1 = EXT:t3_menu/Resources/Private/Templates/ContentElements/
         2 = {$plugin.bootstrap_package_contentelements.view.layoutRootPath}
     }
 
