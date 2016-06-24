@@ -29,13 +29,19 @@ tt_content.menu.thumbnail2_list {
     ### SETTINGS ###
     ################
     settings {
-        media {
-            width = {$plugin.bootstrap_package_contentelements.menu_thumbnails.media.width}
-            height = {$plugin.bootstrap_package_contentelements.menu_thumbnails.media.height}
+        mediathumbnails2 {
+            width = {$plugin.bootstrap_package_contentelements.menu_thumbnails2.media.width}
+            height = {$plugin.bootstrap_package_contentelements.menu_thumbnails2.media.height}
+            maxwidth = {$plugin.bootstrap_package_contentelements.menu_thumbnails2.media.maxwidth}
+            maxheight = {$plugin.bootstrap_package_contentelements.menu_thumbnails2.media.maxheight}			
+			
         }
-        title {
-            crop = {$plugin.bootstrap_package_contentelements.menu_thumbnails.title.crop}
+        titlethumbnails2 {
+            crop = {$plugin.bootstrap_package_contentelements.menu_thumbnails2.title.crop}
         }
+        abstractthumbnails2 {
+            crop = {$plugin.bootstrap_package_contentelements.menu_thumbnails2.title.crop}
+	}		
     }
 
     ##########################

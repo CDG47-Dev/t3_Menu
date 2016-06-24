@@ -29,13 +29,19 @@ tt_content.menu.minithumbnailrow_list {
     ### SETTINGS ###
     ################
     settings {
-        media {
+        mediathumbrow {
             width = {$plugin.bootstrap_package_contentelements.menu_minithumbnailrow.media.width}
             height = {$plugin.bootstrap_package_contentelements.menu_minithumbnailrow.media.height}
+            maxwidth = {$plugin.bootstrap_package_contentelements.menu_minithumbnailrow.media.maxwidth}
+            maxheight = {$plugin.bootstrap_package_contentelements.menu_minithumbnailrow.media.maxheight}			
+			
         }
-        title {
+        titlethumbrow {
             crop = {$plugin.bootstrap_package_contentelements.menu_minithumbnailrow.title.crop}
         }
+        abstractthumbrow {
+            crop = {$plugin.bootstrap_package_contentelements.menu_minithumbnailrow.title.crop}
+		}		
     }
 
     ##########################

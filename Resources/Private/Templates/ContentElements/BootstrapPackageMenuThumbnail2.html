@@ -14,11 +14,11 @@
                         <div class="col-xs-6 col-sm-4">
                             <f:link.page pageUid="{page.data.uid}" title="{page.data.title}" class="thumbnail-rubrique" data="{toggle: 'tooltip'}">
                                 <div class="thumbnail2-image">
-                                    <f:media file="{page.files.0}" width="100%" height="300px" />
+                                    <f:media file="{page.files.0}" width="{settings.mediathumbnails2.width}" height="{settings.mediathumbnails2.height}" style="max-width: {settings.mediathumbnails2.maxwidth}; max-height: {settings.mediathumbnails2.maxheight}"/>
                                 </div>
                                 <div class="thumbnail2-caption">
                                     <f:if condition="{page.data.title}">
-                                        <h2 class="rubriqueTitle"><f:format.crop maxCharacters="{settings.title.crop}">{page.data.title}</f:format.crop></h2>
+                                        <h2 class="rubriqueTitle"><f:format.crop maxCharacters="{settings.titlethumbnails2.crop}">{page.data.title}</f:format.crop></h2>
                                     </f:if>
                                 </div>
                             </f:link.page>

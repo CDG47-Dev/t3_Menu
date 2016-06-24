@@ -29,13 +29,18 @@ tt_content.menu.minithumbnail_list {
     ### SETTINGS ###
     ################
     settings {
-        mediaMin {
+        mediaminithumb {
             width = {$plugin.bootstrap_package_contentelements.menu_minithumbnails.media.width}
             height = {$plugin.bootstrap_package_contentelements.menu_minithumbnails.media.height}
+            maxwidth = {$plugin.bootstrap_package_contentelements.menu_minithumbnails.media.maxwidth}
+            maxheight = {$plugin.bootstrap_package_contentelements.menu_minithumbnails.media.maxheight}			
         }
-        titleMin {
+        titleminithumb {
             crop = {$plugin.bootstrap_package_contentelements.menu_minithumbnails.title.crop}
         }
+        abstractminithumb {
+            crop = {$plugin.bootstrap_package_contentelements.menu_minithumbnails.title.crop}
+		}		
     }
 
     ##########################

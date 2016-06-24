@@ -7,12 +7,34 @@ plugin.bootstrap_package_contentelements {
        layoutRootPath = EXT:t3_menu/Resources/Private/Layouts/ContentElements/
        partialRootPath  = EXT:t3_menu/Resources/Private/Partials/ContentElements/
     }
+    menu_thumbnails2 {
+        media {
+            # cat=bootstrap package: advanced/143/102; type=string; label=Thumbnail Menu Media Height
+            height = 300c
+            # cat=bootstrap package: advanced/143/103; type=string; label=Thumbnail Menu Media Width
+            width = 220c
+            # cat=bootstrap package: advanced/143/102; type=string; label=Thumbnail Menu Media Max-Height
+            maxheight = 300px
+            # cat=bootstrap package: advanced/143/103; type=string; label=Thumbnail Menu Media Max-Width
+            maxwidth = 100%
+
+        }
+        title {
+            # cat=bootstrap package: advanced/143/104; type=string; label=Thumbnail Menu Crop Title
+            crop = 50
+        }
+    } 
      menu_minithumbnails {
         media {
             # cat=bootstrap package: advanced/143/102; type=string; label=Thumbnail Menu Media Height
             height = 125c
             # cat=bootstrap package: advanced/143/103; type=string; label=Thumbnail Menu Media Width
             width = 220c
+            # cat=bootstrap package: advanced/143/102; type=string; label=Thumbnail Menu Media Max-Height
+            maxheight = 125px
+            # cat=bootstrap package: advanced/143/103; type=string; label=Thumbnail Menu Media Max-Width
+            maxwidth = 220px
+
         }
         title {
             # cat=bootstrap package: advanced/143/104; type=string; label=Thumbnail Menu Crop Title
@@ -22,9 +44,13 @@ plugin.bootstrap_package_contentelements {
     menu_minithumbnailrow {
         media {
             # cat=bootstrap package: advanced/143/102; type=string; label=Thumbnail Menu Media Height
-            height = 125c
+            height = 48c
             # cat=bootstrap package: advanced/143/103; type=string; label=Thumbnail Menu Media Width
-            width = 220c
+            width = 48c
+            # cat=bootstrap package: advanced/143/102; type=string; label=Thumbnail Menu Media Max-Height
+            maxheight = 48px
+            # cat=bootstrap package: advanced/143/103; type=string; label=Thumbnail Menu Media Max-Width
+            maxwidth = 48px
         }
         title {
             # cat=bootstrap package: advanced/143/104; type=string; label=Thumbnail Menu Crop Title
@@ -37,6 +63,10 @@ plugin.bootstrap_package_contentelements {
             height = 48px
             # cat=bootstrap package: advanced/143/103; type=string; label=Thumbnail Menu Media Width
             width = 48px
+            # cat=bootstrap package: advanced/143/102; type=string; label=Thumbnail Menu Media Max-Height
+            maxheight = 48px
+            # cat=bootstrap package: advanced/143/103; type=string; label=Thumbnail Menu Media Max-Width
+            maxwidth = 48px
         }
         title {
             # cat=bootstrap package: advanced/143/104; type=string; label=Thumbnail Menu Crop Title

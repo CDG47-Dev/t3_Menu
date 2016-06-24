@@ -4,3 +4,14 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3_menu/Configuration/TypoScript/ContentElement/BootstrapPackageMenuThumbnail2.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3_menu/Configuration/TypoScript/ContentElement/MenuSitemapAccordion.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3_menu/Configuration/TypoScript/ContentElement/BootstrapPackageMenuMiniThumbnailRow.txt">
+
+
+page = PAGE
+page{
+    #Inclusion du CSS
+    includeCSS { 
+        menuspec = EXT:t3_Menu/Resources/Public/Less/menus_speciaux.less
+        menuspec.title = CSS
+        menuspec.media = all 
+    } 	
+}
