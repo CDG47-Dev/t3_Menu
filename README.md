@@ -13,7 +13,7 @@ Ajout de nouvelles dispositions pour l'élément de contenu "menus spéciaux"
 * Inclure l'extension dans le gabarit du site
 * Insérer ensuite l'élément de contenu "menus spéciaux" sur une page
 * Choisir le type de menu dans la liste déroulante
-* 
+
 ## Usage
 Se reporter au fichier typoscript [constants.txt](https://github.com/CDG47-Dev/t3_Menu/blob/master/Configuration/TypoScript/constants.txt) pour voir les variables utilisées et éventuellement définir de nouvelles valeurs
 
