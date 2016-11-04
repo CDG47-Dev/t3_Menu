@@ -1,0 +1,62 @@
+
+
+/*  Menu Row   */
+.miniMenuRow{
+ margin-bottom: 1em;
+ color: black;
+  a{
+    color: black;
+        &:hover,
+        &:focus {
+          text-decoration: underline;
+        }
+  }
+ .miniMenuRowLinks{
+    margin-bottom: 0.5em;
+    display:block;
+  }
+  .picLink{
+    margin-right: 0.85em;
+  }
+}
+
+/* MiniMenu Carré */
+.miniMenu h2{
+  text-align:center;
+  font-size:0.743em;
+}
+
+/* Menu Liste déroulante */
+.listepage{
+	.select{
+		button {
+			width:100%;
+			text-align:left;
+		}
+		.caret {
+			position:absolute;
+			right:10px;
+			margin-top:10px;
+		}
+		&:last-child > .btn {
+			border-top-left-radius:5px;
+			border-bottom-left-radius:5px;
+		}	
+	}
+	.selected {padding-right:10px;}
+	.option {width:100%;}
+}
+
+/* Menu Liste Je suis */
+.jesuis{
+	div[id^='liste']{
+		display: none;
+		width: 100%;
+	}
+	div[id^='liste1']{
+		display: inline-block;
+	}
+	
+	
+
+}

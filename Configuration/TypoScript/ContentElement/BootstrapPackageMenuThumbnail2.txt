@@ -11,18 +11,18 @@ tt_content.menu.thumbnail2_list {
     templateName = BootstrapPackageMenuThumbnail2
      templateRootPaths {
        0 = EXT:bootstrap_package/Resources/Private/Templates/ContentElements/
-	1 = EXT:t3_menu/Resources/Private/Templates/ContentElements/
-        2 = {$plugin.bootstrap_package_contentelements.view.templateRootPath}
+	10 = EXT:t3_menu/Resources/Private/Templates/ContentElements/
+        20 = {$page.fluidtemplatemenu.templateRootPath}
     }
     partialRootPaths {
         0 = EXT:bootstrap_package/Resources/Private/Partials/ContentElements/
-	1 = EXT:t3_menu/Resources/Private/Partials/ContentElements/
-        2 = {$plugin.bootstrap_package_contentelements.view.templateRootPath}
+	10 = EXT:t3_menu/Resources/Private/Partials/ContentElements/
+        20 = {$page.fluidtemplatemenu.templateRootPath}
     }
     layoutRootPaths {
         0 = EXT:bootstrap_package/Resources/Private/Layouts/ContentElements/
-	1 = EXT:t3_menu/Resources/Private/Layouts/ContentElements/
-        2 = {$plugin.bootstrap_package_contentelements.view.templateRootPath}
+	10 = EXT:t3_menu/Resources/Private/Layouts/ContentElements/
+        20 = {$page.fluidtemplatemenu.templateRootPath}
     }
 
     ################

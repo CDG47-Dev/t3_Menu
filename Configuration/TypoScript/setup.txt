@@ -1,17 +1,26 @@
+page = PAGE
+page{
+
+    #Inclusion du CSS
+    includeCSS { 
+        menuspec = EXT:t3_menu/Resources/Public/Less/menus.less
+        menuspec.title = CSS
+        menuspec.media = all 
+    } 	
+	#Inclusion des librairies Javascript
+	includeJSFooterlibs {
+        menuspec = EXT:t3_menu/Resources/Public/Js/menus.js
+    }
+	
+}
+
 #### BOOTSTRAP PACKAGE CONTENT ELEMENT RENDERING
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3_menu/Configuration/TypoScript/ContentElement/BootstrapPackageMenuMiniThumbnail.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3_menu/Configuration/TypoScript/ContentElement/BootstrapPackageMenuIcones48.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3_menu/Configuration/TypoScript/ContentElement/BootstrapPackageMenuThumbnail2.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3_menu/Configuration/TypoScript/ContentElement/MenuSitemapAccordion.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3_menu/Configuration/TypoScript/ContentElement/MenuListeDeroulante.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3_menu/Configuration/TypoScript/ContentElement/MenuListeJeSuis.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3_menu/Configuration/TypoScript/ContentElement/BootstrapPackageMenuMiniThumbnailRow.txt">
 
 
-page = PAGE
-page{
-    #Inclusion du CSS
-    includeCSS { 
-        menuspec = EXT:t3_Menu/Resources/Public/Less/menus_speciaux.less
-        menuspec.title = CSS
-        menuspec.media = all 
-    } 	
-}

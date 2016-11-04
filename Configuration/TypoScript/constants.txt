@@ -1,12 +1,20 @@
+##############
+### PAGE   ###
+##############
+page{
+	fluidtemplatemenu{
+		view{
+		   templateRootPath = EXT:t3_menu/Resources/Private/Templates/ContentElements/
+		   layoutRootPath = EXT:t3_menu/Resources/Private/Layouts/ContentElements/
+		   partialRootPath  = EXT:t3_menu/Resources/Private/Partials/ContentElements/
+		}
+	}
+}
+
 ##########################################
 ### BOOTSTRAP PACKAGE CONTENT ELEMENTS ###
 ##########################################
 plugin.bootstrap_package_contentelements {
-    view{
-       templateRootPath = EXT:t3_menu/Resources/Private/Templates/ContentElements/
-       layoutRootPath = EXT:t3_menu/Resources/Private/Layouts/ContentElements/
-       partialRootPath  = EXT:t3_menu/Resources/Private/Partials/ContentElements/
-    }
     menu_thumbnails2 {
         media {
             # cat=bootstrap package: advanced/143/102; type=string; label=Thumbnail Menu Media Height
