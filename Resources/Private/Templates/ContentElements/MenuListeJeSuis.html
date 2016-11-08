@@ -1,4 +1,5 @@
 <f:layout name="Default"/>
+
 <f:section name="Header">
 
     <f:render partial="Header/All" arguments="{_all}" />
@@ -7,18 +8,31 @@
 <f:section name="Main">
     <f:if condition="{menu}">
       <div class="row listepage jesuis">
-        <div class="col-md-12">
-			<div class="input-group-btn select" id="select-{contentObjectData.uid}">
-
-				  	<select class="form-control">
-						<f:for each="{menu}" as="item"  iteration="iterator">
-							<option value="{iterator.cycle}">{item.title}</option> 
-					  	</f:for>	
-					</select>
-			
+        <div class="col-md-12"  id="select-{data.uid}">
+			<div class="input-group-btn select">
+				  	<div id="select{iterator.cycle}">
+							<f:for each="{menu}" as="item"  iteration="iterator">
+								<f:if condition="{iterator.isFirst}">
+									<f:then>
+										<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="selected entete">{item.title}</span> <span class="caret"></span></button>
+										<ul class="dropdown-menu option" role="menu">
+									</f:then>
+									<f:else>
+										<li id="{iterator.cycle}">{item.title}</li> 
+										<f:if condition="{iterator.isLast}">
+												<f:then>
+													</ul>
+												</f:then>
+										</f:if>
+									</f:else>
+								</f:if>
+							</f:for>	
+					</div>
+			 </div>
+			 <div class="input-group-btn select">
 				  <f:for each="{menu}" as="item"  iteration="iterator">
 				  <div id="liste{iterator.cycle}">
-				  	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="selected">Je veux</span> <span class="caret"></span></button>
+				  	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="selected entete">Je veux</span> <span class="caret"></span></button>
 				  	<ul class="dropdown-menu option" role="menu">
 						 <f:for each="{item.children}" as="child">
 							<li id="{child.data.uid}"><f:link.page pageUid="{child.data.uid}" title="{child.title}">{child.title}</f:link.page></li> 
@@ -27,7 +41,7 @@
 				  </div>					
 				  </f:for>	
 			</div>
-        </div>
+       </div>
      </div>
     </f:if>
 
