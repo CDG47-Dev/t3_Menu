@@ -9,7 +9,7 @@ $(document).ready(function()
 
         });
 		
-		$('.jesuis .dropdown-menu li a').click(function(){
+		$('.jesuis .dropdown-menu li').click(function(){
 			var selText = $(this).text();
 			$(this).parents('#select').find('.dropdown-toggle').html('<span class="selected entete">'+selText+'</span> <span class="caret"></span>');
 		});
