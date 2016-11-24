@@ -34,6 +34,14 @@
 		button {
 			width:100%;
 			text-align:left;
+			background: rgba(0, 0, 0, 0) linear-gradient(to right, #82b9e5 0%, #82b9e5 28%, #ededed 29%, #ededed 100%);
+			
+			span{
+			   entete{
+				   color: #ffffff;
+				  text-transform: uppercase;		     
+			   }
+			}
 		}
 		.caret {
 			position:absolute;
@@ -52,6 +60,11 @@
 
 /* Menu Liste Je suis */
 .jesuis{
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+	
 	div[id^='liste']{
 		display: none;
 		width: 100%;
@@ -60,8 +73,24 @@
 		display: inline-block;
 	}
 	
-	
+	#select{
+		.dropdown-menu > li {
+			clear: both;
+			color: #333333;
+			display: block;
+			font-weight: normal;
+			line-height: 1.55;
+			padding: 11.5px 15px;
+			white-space: nowrap;
+			
+			&:hover{
+				background-color: #ff8700;
+				color: #ffffff;
+				text-decoration: none;		
+		    }
+		}
 
+	}
 }
 
 
