@@ -12,7 +12,7 @@
                     <f:if condition="{page.files.0.type} == 2">
 
                         <div class="col-xs-6 col-sm-4">
-                            <f:link.page pageUid="{page.data.uid}" title="{page.data.title}" class="thumbnail-rubrique" data="{toggle: 'tooltip'}">
+                            <f:link.page pageUid="{page.data.uid}" title="{page.data.title}" target="{page.data.target}" class="thumbnail-rubrique" data="{toggle: 'tooltip'}">
                                 <div class="thumbnail2-image">
                                     <f:media file="{page.files.0}" width="{settings.mediathumbnails2.width}" height="{settings.mediathumbnails2.height}" style="max-width: {settings.mediathumbnails2.maxwidth}; max-height: {settings.mediathumbnails2.maxheight}"/>
                                 </div>
